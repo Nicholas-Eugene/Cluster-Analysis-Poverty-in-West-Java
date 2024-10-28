@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aa1fdf5295849f61022ae23386981d60 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aa1fdf5295849f61022ae23386981d60" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aa1fdf5295849f61022ae23386981d60 = L.map(
+                "map_aa1fdf5295849f61022ae23386981d60",
+                {
+                    center: [-1.0, 114.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a40dae299269ec7ed833c117fad2ed38 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a40dae299269ec7ed833c117fad2ed38.addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+            var circle_marker_cd0675588b9d99ef41119740eec54c5d = L.circleMarker(
+                [-6.90389, 107.61861],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_18c833853914b825704e1b235a3ea452 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45f4869975621f74f9cb7ceb7e2f634b = $(`<div id="html_45f4869975621f74f9cb7ceb7e2f634b" style="width: 100.0%; height: 100.0%;">Kabupaten Bandung: Cluster 1.0</div>`)[0];
+                popup_18c833853914b825704e1b235a3ea452.setContent(html_45f4869975621f74f9cb7ceb7e2f634b);
+            
+        
+
+        circle_marker_cd0675588b9d99ef41119740eec54c5d.bindPopup(popup_18c833853914b825704e1b235a3ea452)
+        ;
+
+        
+    
+    
+            var circle_marker_5787cece4a20c5ce1eb21c55ac0d227b = L.circleMarker(
+                [-6.9214, 107.5164],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_5202e50a998d45e75d110da6971ce389 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d9979970404ae87980e036771e2325d = $(`<div id="html_9d9979970404ae87980e036771e2325d" style="width: 100.0%; height: 100.0%;">Kabupaten Bandung Barat: Cluster 0.0</div>`)[0];
+                popup_5202e50a998d45e75d110da6971ce389.setContent(html_9d9979970404ae87980e036771e2325d);
+            
+        
+
+        circle_marker_5787cece4a20c5ce1eb21c55ac0d227b.bindPopup(popup_5202e50a998d45e75d110da6971ce389)
+        ;
+
+        
+    
+    
+            var circle_marker_868d4a69a5ff333246d0cb866aceca42 = L.circleMarker(
+                [-6.2383, 107.1347],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_caa3d15df14eccf726c4b3fc796c3447 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2938b4aeab27f5fb46ab30863e5468de = $(`<div id="html_2938b4aeab27f5fb46ab30863e5468de" style="width: 100.0%; height: 100.0%;">Kabupaten Bekasi: Cluster 0.0</div>`)[0];
+                popup_caa3d15df14eccf726c4b3fc796c3447.setContent(html_2938b4aeab27f5fb46ab30863e5468de);
+            
+        
+
+        circle_marker_868d4a69a5ff333246d0cb866aceca42.bindPopup(popup_caa3d15df14eccf726c4b3fc796c3447)
+        ;
+
+        
+    
+    
+            var circle_marker_13aabca7abf17eb5efee0ae84a61a025 = L.circleMarker(
+                [-6.595, 106.7892],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_9abab2279277c9af37b24315bdb35d88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efe427ab6d99baf818144c2540f17487 = $(`<div id="html_efe427ab6d99baf818144c2540f17487" style="width: 100.0%; height: 100.0%;">Kabupaten Bogor: Cluster 2.0</div>`)[0];
+                popup_9abab2279277c9af37b24315bdb35d88.setContent(html_efe427ab6d99baf818144c2540f17487);
+            
+        
+
+        circle_marker_13aabca7abf17eb5efee0ae84a61a025.bindPopup(popup_9abab2279277c9af37b24315bdb35d88)
+        ;
+
+        
+    
+    
+            var circle_marker_a1e8538f0d20559f982dec9455b33076 = L.circleMarker(
+                [-7.3264, 108.3537],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_80b1373cbf935527fcd734b20825ef22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbb7e83f7faf201612a5a87cb13fbc51 = $(`<div id="html_bbb7e83f7faf201612a5a87cb13fbc51" style="width: 100.0%; height: 100.0%;">Kabupaten Ciamis: Cluster 0.0</div>`)[0];
+                popup_80b1373cbf935527fcd734b20825ef22.setContent(html_bbb7e83f7faf201612a5a87cb13fbc51);
+            
+        
+
+        circle_marker_a1e8538f0d20559f982dec9455b33076.bindPopup(popup_80b1373cbf935527fcd734b20825ef22)
+        ;
+
+        
+    
+    
+            var circle_marker_b24c958750f76bd1a5dfeddc9d9e7eaa = L.circleMarker(
+                [-6.8193, 107.1397],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_42a91ce5f65493dc8a362132d168b330 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4c232c5782a067147a670f237ae1188 = $(`<div id="html_a4c232c5782a067147a670f237ae1188" style="width: 100.0%; height: 100.0%;">Kabupaten Cianjur: Cluster 1.0</div>`)[0];
+                popup_42a91ce5f65493dc8a362132d168b330.setContent(html_a4c232c5782a067147a670f237ae1188);
+            
+        
+
+        circle_marker_b24c958750f76bd1a5dfeddc9d9e7eaa.bindPopup(popup_42a91ce5f65493dc8a362132d168b330)
+        ;
+
+        
+    
+    
+            var circle_marker_ef95ec3f0e9934d00ace8ce832e2fab2 = L.circleMarker(
+                [-6.7063, 108.5617],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_4800e49c03fe73bad226afc81b66362c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36364f3ababa921008349a1e16f4dc50 = $(`<div id="html_36364f3ababa921008349a1e16f4dc50" style="width: 100.0%; height: 100.0%;">Kabupaten Cirebon: Cluster 1.0</div>`)[0];
+                popup_4800e49c03fe73bad226afc81b66362c.setContent(html_36364f3ababa921008349a1e16f4dc50);
+            
+        
+
+        circle_marker_ef95ec3f0e9934d00ace8ce832e2fab2.bindPopup(popup_4800e49c03fe73bad226afc81b66362c)
+        ;
+
+        
+    
+    
+            var circle_marker_cb9cc9830388142edf0a4e0d3f9a2009 = L.circleMarker(
+                [-7.2167, 107.9066],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_c34d0692ae86f4f969e822f15abb5b31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5fcc344b3ce35e0bf28dcaf933549626 = $(`<div id="html_5fcc344b3ce35e0bf28dcaf933549626" style="width: 100.0%; height: 100.0%;">Kabupaten Garut: Cluster 1.0</div>`)[0];
+                popup_c34d0692ae86f4f969e822f15abb5b31.setContent(html_5fcc344b3ce35e0bf28dcaf933549626);
+            
+        
+
+        circle_marker_cb9cc9830388142edf0a4e0d3f9a2009.bindPopup(popup_c34d0692ae86f4f969e822f15abb5b31)
+        ;
+
+        
+    
+    
+            var circle_marker_4d63a9444e158b1e9b11d37abc3e38ba = L.circleMarker(
+                [-6.3253, 108.3237],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_21ab7cc5967ff7187f03b10b20f3ab86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afaceefd89d08529f59723990a521746 = $(`<div id="html_afaceefd89d08529f59723990a521746" style="width: 100.0%; height: 100.0%;">Kabupaten Indramayu: Cluster 1.0</div>`)[0];
+                popup_21ab7cc5967ff7187f03b10b20f3ab86.setContent(html_afaceefd89d08529f59723990a521746);
+            
+        
+
+        circle_marker_4d63a9444e158b1e9b11d37abc3e38ba.bindPopup(popup_21ab7cc5967ff7187f03b10b20f3ab86)
+        ;
+
+        
+    
+    
+            var circle_marker_e92060e82693b4d25963b2d56beab266 = L.circleMarker(
+                [-6.305, 107.3496],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_357d3fce6f5b2d81025f90820d0c89a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2129f9a8fb001de02c54917d8d04aeb1 = $(`<div id="html_2129f9a8fb001de02c54917d8d04aeb1" style="width: 100.0%; height: 100.0%;">Kabupaten Karawang: Cluster 1.0</div>`)[0];
+                popup_357d3fce6f5b2d81025f90820d0c89a4.setContent(html_2129f9a8fb001de02c54917d8d04aeb1);
+            
+        
+
+        circle_marker_e92060e82693b4d25963b2d56beab266.bindPopup(popup_357d3fce6f5b2d81025f90820d0c89a4)
+        ;
+
+        
+    
+    
+            var circle_marker_7b735f3143b033717b87514adde42b7f = L.circleMarker(
+                [-6.9789, 108.4855],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_a0852d34188e2f1e3d4b678c82e18664 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_582bb6e53daec5ed062c4844bee67a46 = $(`<div id="html_582bb6e53daec5ed062c4844bee67a46" style="width: 100.0%; height: 100.0%;">Kabupaten Kuningan: Cluster 0.0</div>`)[0];
+                popup_a0852d34188e2f1e3d4b678c82e18664.setContent(html_582bb6e53daec5ed062c4844bee67a46);
+            
+        
+
+        circle_marker_7b735f3143b033717b87514adde42b7f.bindPopup(popup_a0852d34188e2f1e3d4b678c82e18664)
+        ;
+
+        
+    
+    
+            var circle_marker_cc6de574f382aa273d2b2ef100d79153 = L.circleMarker(
+                [-6.8394, 108.2254],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_de8799fd596506a0bc2569566abd42f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f11cf45cf0ec505ff494757282e2f4dc = $(`<div id="html_f11cf45cf0ec505ff494757282e2f4dc" style="width: 100.0%; height: 100.0%;">Kabupaten Majalengka: Cluster 0.0</div>`)[0];
+                popup_de8799fd596506a0bc2569566abd42f9.setContent(html_f11cf45cf0ec505ff494757282e2f4dc);
+            
+        
+
+        circle_marker_cc6de574f382aa273d2b2ef100d79153.bindPopup(popup_de8799fd596506a0bc2569566abd42f9)
+        ;
+
+        
+    
+    
+            var circle_marker_f3ca1e53ffeedefb46fda2ee2c7cc4f2 = L.circleMarker(
+                [-7.6907, 108.6543],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_74603ab84e37e0a09f87bf5647b06281 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b586aca7c641202f92f6e71ec33ba57b = $(`<div id="html_b586aca7c641202f92f6e71ec33ba57b" style="width: 100.0%; height: 100.0%;">Kabupaten Pangandaran: Cluster 3.0</div>`)[0];
+                popup_74603ab84e37e0a09f87bf5647b06281.setContent(html_b586aca7c641202f92f6e71ec33ba57b);
+            
+        
+
+        circle_marker_f3ca1e53ffeedefb46fda2ee2c7cc4f2.bindPopup(popup_74603ab84e37e0a09f87bf5647b06281)
+        ;
+
+        
+    
+    
+            var circle_marker_179996a293b8014ad33f72d61c29759b = L.circleMarker(
+                [-6.5589, 107.4429],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_9593df8d4d181d96cd4ea63f1b89dfff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_556b400c784383c7eacc4e5de133f4c3 = $(`<div id="html_556b400c784383c7eacc4e5de133f4c3" style="width: 100.0%; height: 100.0%;">Kabupaten Purwakarta: Cluster 3.0</div>`)[0];
+                popup_9593df8d4d181d96cd4ea63f1b89dfff.setContent(html_556b400c784383c7eacc4e5de133f4c3);
+            
+        
+
+        circle_marker_179996a293b8014ad33f72d61c29759b.bindPopup(popup_9593df8d4d181d96cd4ea63f1b89dfff)
+        ;
+
+        
+    
+    
+            var circle_marker_45e0988bf6a1d28a98a9f440fcdd2309 = L.circleMarker(
+                [-6.5765, 107.7618],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_f4aadf9b0e97a21091114a2de59b0e1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1282b3d9c1eebca8adbb8d2620a24ed = $(`<div id="html_f1282b3d9c1eebca8adbb8d2620a24ed" style="width: 100.0%; height: 100.0%;">Kabupaten Subang: Cluster 0.0</div>`)[0];
+                popup_f4aadf9b0e97a21091114a2de59b0e1f.setContent(html_f1282b3d9c1eebca8adbb8d2620a24ed);
+            
+        
+
+        circle_marker_45e0988bf6a1d28a98a9f440fcdd2309.bindPopup(popup_f4aadf9b0e97a21091114a2de59b0e1f)
+        ;
+
+        
+    
+    
+            var circle_marker_b07daa538dcd9c0568106b065b272b52 = L.circleMarker(
+                [-6.9238, 106.928],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_8c7669fd13c8567f67dd57f65a7bb10b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fde67eec773e6d77ca416efd743f01b1 = $(`<div id="html_fde67eec773e6d77ca416efd743f01b1" style="width: 100.0%; height: 100.0%;">Kabupaten Sukabumi: Cluster 1.0</div>`)[0];
+                popup_8c7669fd13c8567f67dd57f65a7bb10b.setContent(html_fde67eec773e6d77ca416efd743f01b1);
+            
+        
+
+        circle_marker_b07daa538dcd9c0568106b065b272b52.bindPopup(popup_8c7669fd13c8567f67dd57f65a7bb10b)
+        ;
+
+        
+    
+    
+            var circle_marker_62101de354f4a6e05e7da460cd4416f6 = L.circleMarker(
+                [-6.8374, 107.9168],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_017d1630aebfea7d1c46c054b3bffa28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb2c6c38aedfc7b6417031fed6657754 = $(`<div id="html_eb2c6c38aedfc7b6417031fed6657754" style="width: 100.0%; height: 100.0%;">Kabupaten Sumedang: Cluster 0.0</div>`)[0];
+                popup_017d1630aebfea7d1c46c054b3bffa28.setContent(html_eb2c6c38aedfc7b6417031fed6657754);
+            
+        
+
+        circle_marker_62101de354f4a6e05e7da460cd4416f6.bindPopup(popup_017d1630aebfea7d1c46c054b3bffa28)
+        ;
+
+        
+    
+    
+            var circle_marker_cc8afa8af1d890158cb1acb3efde69bd = L.circleMarker(
+                [-7.3949, 108.2087],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_af1cf2632de97507674c65912cf8132c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_384b8cb6cd70431a32e733cfcbbcb951 = $(`<div id="html_384b8cb6cd70431a32e733cfcbbcb951" style="width: 100.0%; height: 100.0%;">Kabupaten Tasikmalaya: Cluster 1.0</div>`)[0];
+                popup_af1cf2632de97507674c65912cf8132c.setContent(html_384b8cb6cd70431a32e733cfcbbcb951);
+            
+        
+
+        circle_marker_cc8afa8af1d890158cb1acb3efde69bd.bindPopup(popup_af1cf2632de97507674c65912cf8132c)
+        ;
+
+        
+    
+    
+            var circle_marker_feb2b4cca2612b0aa87a36a2cee0894d = L.circleMarker(
+                [-6.9175, 107.6191],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_7668f77c8775712d7683ecd7fe65e4fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1f7a38680e945da44506650c9fe0e60 = $(`<div id="html_a1f7a38680e945da44506650c9fe0e60" style="width: 100.0%; height: 100.0%;">Kota Bandung: Cluster 3.0</div>`)[0];
+                popup_7668f77c8775712d7683ecd7fe65e4fd.setContent(html_a1f7a38680e945da44506650c9fe0e60);
+            
+        
+
+        circle_marker_feb2b4cca2612b0aa87a36a2cee0894d.bindPopup(popup_7668f77c8775712d7683ecd7fe65e4fd)
+        ;
+
+        
+    
+    
+            var circle_marker_5a91afbe4ef9b7e58d7f8ee8441aea4f = L.circleMarker(
+                [-7.3706, 108.5346],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_c676aee0bc46fe54c03cbf20ec74e336 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_330ae8b8ebbfc64d8184c29520498387 = $(`<div id="html_330ae8b8ebbfc64d8184c29520498387" style="width: 100.0%; height: 100.0%;">Kota Banjar: Cluster 3.0</div>`)[0];
+                popup_c676aee0bc46fe54c03cbf20ec74e336.setContent(html_330ae8b8ebbfc64d8184c29520498387);
+            
+        
+
+        circle_marker_5a91afbe4ef9b7e58d7f8ee8441aea4f.bindPopup(popup_c676aee0bc46fe54c03cbf20ec74e336)
+        ;
+
+        
+    
+    
+            var circle_marker_7fe6cad4d6c5939c788b7285c98fda57 = L.circleMarker(
+                [-6.2409, 106.9921],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_4271ddab014d40e4e4fc7bd746b8b657 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3eb478f332d21227fcc8a5343e81c9df = $(`<div id="html_3eb478f332d21227fcc8a5343e81c9df" style="width: 100.0%; height: 100.0%;">Kota Bekasi: Cluster 0.0</div>`)[0];
+                popup_4271ddab014d40e4e4fc7bd746b8b657.setContent(html_3eb478f332d21227fcc8a5343e81c9df);
+            
+        
+
+        circle_marker_7fe6cad4d6c5939c788b7285c98fda57.bindPopup(popup_4271ddab014d40e4e4fc7bd746b8b657)
+        ;
+
+        
+    
+    
+            var circle_marker_177ba262825a5e07faba5871a4afc885 = L.circleMarker(
+                [-6.5944, 106.7896],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_808fa5808fae3a5d90bfc0f2ab3063ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_895e5cf8c0f9b85a952d0ce085040142 = $(`<div id="html_895e5cf8c0f9b85a952d0ce085040142" style="width: 100.0%; height: 100.0%;">Kota Bogor: Cluster 3.0</div>`)[0];
+                popup_808fa5808fae3a5d90bfc0f2ab3063ae.setContent(html_895e5cf8c0f9b85a952d0ce085040142);
+            
+        
+
+        circle_marker_177ba262825a5e07faba5871a4afc885.bindPopup(popup_808fa5808fae3a5d90bfc0f2ab3063ae)
+        ;
+
+        
+    
+    
+            var circle_marker_20ad50e67932c37c04f5034ecbe20296 = L.circleMarker(
+                [-6.8723, 107.5427],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_5ae9cadc2d4dc9cf3afd579ef3b476c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec3ceda355b9ad5160f17c5d657fcc05 = $(`<div id="html_ec3ceda355b9ad5160f17c5d657fcc05" style="width: 100.0%; height: 100.0%;">Kota Cimahi: Cluster 3.0</div>`)[0];
+                popup_5ae9cadc2d4dc9cf3afd579ef3b476c7.setContent(html_ec3ceda355b9ad5160f17c5d657fcc05);
+            
+        
+
+        circle_marker_20ad50e67932c37c04f5034ecbe20296.bindPopup(popup_5ae9cadc2d4dc9cf3afd579ef3b476c7)
+        ;
+
+        
+    
+    
+            var circle_marker_629a1ae5bb3d33ec1a07c44780d7d127 = L.circleMarker(
+                [-6.7263, 108.5522],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_b366eca4279d9c047a05a22a8e6c2472 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26aa7f5643eba533b12a863759cbdd2c = $(`<div id="html_26aa7f5643eba533b12a863759cbdd2c" style="width: 100.0%; height: 100.0%;">Kota Cirebon: Cluster 3.0</div>`)[0];
+                popup_b366eca4279d9c047a05a22a8e6c2472.setContent(html_26aa7f5643eba533b12a863759cbdd2c);
+            
+        
+
+        circle_marker_629a1ae5bb3d33ec1a07c44780d7d127.bindPopup(popup_b366eca4279d9c047a05a22a8e6c2472)
+        ;
+
+        
+    
+    
+            var circle_marker_db3b0c3ad5f541df5f98124f7d8f8bb2 = L.circleMarker(
+                [-6.4025, 106.7942],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_ef06edb7813f227e8b545d297e7981ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa6eee9ab56c1c128944cf2034abe004 = $(`<div id="html_fa6eee9ab56c1c128944cf2034abe004" style="width: 100.0%; height: 100.0%;">Kota Depok: Cluster 3.0</div>`)[0];
+                popup_ef06edb7813f227e8b545d297e7981ea.setContent(html_fa6eee9ab56c1c128944cf2034abe004);
+            
+        
+
+        circle_marker_db3b0c3ad5f541df5f98124f7d8f8bb2.bindPopup(popup_ef06edb7813f227e8b545d297e7981ea)
+        ;
+
+        
+    
+    
+            var circle_marker_06fa64ffee65062d7dbcaecf0df2d57d = L.circleMarker(
+                [-6.9285, 106.9287],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_c4ab144101494542f6994a6b1333f0a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bf30f4e44c87f98c6abcc9ed3e1afa8 = $(`<div id="html_6bf30f4e44c87f98c6abcc9ed3e1afa8" style="width: 100.0%; height: 100.0%;">Kota Sukabumi: Cluster 3.0</div>`)[0];
+                popup_c4ab144101494542f6994a6b1333f0a4.setContent(html_6bf30f4e44c87f98c6abcc9ed3e1afa8);
+            
+        
+
+        circle_marker_06fa64ffee65062d7dbcaecf0df2d57d.bindPopup(popup_c4ab144101494542f6994a6b1333f0a4)
+        ;
+
+        
+    
+    
+            var circle_marker_b7d5ec64b310cc804ad977d9c11f09f5 = L.circleMarker(
+                [-7.3274, 108.2206],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa1fdf5295849f61022ae23386981d60);
+        
+    
+        var popup_4715e163aad5205402814f52b91fb280 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2698c8e6731a44d453b800b42c56f44 = $(`<div id="html_c2698c8e6731a44d453b800b42c56f44" style="width: 100.0%; height: 100.0%;">Kota Tasikmalaya: Cluster 3.0</div>`)[0];
+                popup_4715e163aad5205402814f52b91fb280.setContent(html_c2698c8e6731a44d453b800b42c56f44);
+            
+        
+
+        circle_marker_b7d5ec64b310cc804ad977d9c11f09f5.bindPopup(popup_4715e163aad5205402814f52b91fb280)
+        ;
+
+        
+    
+</script>
+</html>
